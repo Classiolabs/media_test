@@ -16,6 +16,7 @@ dependencies:
   media_kit_libs_video:
     path: packages/media-kit/libs/universal/media_kit_libs_video
   crypto: ^3.0.3
+  flutter_inappwebview: ^6.1.5
 
 dependency_overrides:
   media_kit: { path: packages/media-kit/media_kit }

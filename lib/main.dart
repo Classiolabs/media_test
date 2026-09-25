@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:media_kit/media_kit.dart';
 import 'package:media_kit_video/media_kit_video.dart';
 
+import 'oven_player.dart';
 import 'secure/secure_player.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   MediaKit.ensureInitialized();
-  runApp(const MaterialApp(home: PlayerPage()));
+  runApp(const MaterialApp(home: OvenPlayer()));
 }
 
 class PlayerPage extends StatefulWidget {
