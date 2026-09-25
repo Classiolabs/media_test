@@ -1,0 +1,38 @@
+name: media_test
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  media_kit:
+    path: packages/media-kit/media_kit
+  media_kit_video:
+    path: packages/media-kit/media_kit_video
+  media_kit_libs_video:
+    path: packages/media-kit/libs/universal/media_kit_libs_video
+  crypto: ^3.0.3
+
+dependency_overrides:
+  media_kit: { path: packages/media-kit/media_kit }
+  media_kit_video: { path: packages/media-kit/media_kit_video }
+  media_kit_libs_android_video:
+    { path: packages/media-kit/libs/android/media_kit_libs_android_video }
+  media_kit_libs_ios_video:
+    { path: packages/media-kit/libs/ios/media_kit_libs_ios_video }
+  media_kit_libs_macos_video:
+    { path: packages/media-kit/libs/macos/media_kit_libs_macos_video }
+  media_kit_libs_windows_video:
+    { path: packages/media-kit/libs/windows/media_kit_libs_windows_video }
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
